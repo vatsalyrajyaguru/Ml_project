@@ -1,7 +1,7 @@
 import os
 import sys
 # from Exeption import exeptionhandel
-from exeption import CustomException
+from src.exeption import CustomExeption
 from logger import logging
 import pandas as pd
 
@@ -45,7 +45,7 @@ class dataingetion:
             )
 
         except Exception as e:
-            raise CustomException(e,sys)
+            raise CustomExeption(e,sys)
 
 if __name__=="__main__":
     obj=dataingetion()
